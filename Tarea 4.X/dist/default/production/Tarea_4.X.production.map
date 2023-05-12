@@ -1,0 +1,86 @@
+Microchip MPLAB XC8 PIC(R) Assembler V2.40
+
+Linker command line:
+
+-W-3 \
+  --edf=C:\Program Files\Microchip\xc8\v2.40\pic\dat\20220703182018_en.msgs \
+  -cs -h+dist/default/production\Tarea_4.X.production.sym \
+  --cmf=dist/default/production\Tarea_4.X.production.cmf -z -Q16HV540 \
+  -oC:\Users\schwe\AppData\Local\Temp\xcAs45c.4 --fixupoverflow=error \
+  -ver=XC8 PIC(R) Assembler --fixupoverflow=lstwarn \
+  -Mdist/default/production/Tarea_4.X.production.map -E1 --acfsm=1493 \
+  -ACODE=00h-01FFh -ASTRCODE=00h-01FFh -ASTRING=00h-0FFh \
+  -AENTRY=00h-0FFh-01FFh -ABANK0=07h-01Dh -ARAM=07h-01Dh -AABS1=07h-01Fh \
+  -ACOMMON=01Ch-01Fh -ASFR0=00h-06h -ACONFIG=0FFFh-0FFFh -DCONFIG=2 \
+  -AIDLOC=0200h-0203h -DIDLOC=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
+  -DENTRY=2 build/default/production/Principal.o 
+
+Object code version is 3.11
+
+Machine type is 16HV540
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+build/default/production/Principal.o
+                config                              FFF      FFF        1        0       4
+                data                                1F9      1F9        7      3F2       0
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   CODE           
+
+        CLASS   STRCODE        
+                data                                1F9      1F9        7         0
+
+        CLASS   STRING         
+
+        CLASS   ENTRY          
+
+        CLASS   BANK0          
+
+        CLASS   RAM            
+
+        CLASS   ABS1           
+
+        CLASS   COMMON         
+
+        CLASS   SFR0           
+
+        CLASS   CONFIG         
+                config                              FFF      FFF        1         4
+
+        CLASS   IDLOC          
+
+        CLASS   CONST          
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
+
+                data                           0001F9  000007  000200       3F2       0  STRCODE     2
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            0007-001D             17           1
+        CODE             0000-01F8            1F9           2
+        COMMON           001C-001F              4           1
+        ENTRY            0000-00FF+00F9        100           2
+        IDLOC            0200-0203              4           2
+        RAM              0007-001D             17           1
+        SFR0             0000-0006              7           1
+        STRCODE          0000-01F8            1F9           2
+        STRING           0000-00FF            100           2
+
+                                  Symbol Table
+
+__Hcode        code        0000  __Hconfig      config      1000
+__Hdata        data        0000  __Hspace_0     (abs)       0200
+__Hspace_1     (abs)       0000  __Hspace_4     (abs)       1FFF
+__Hudata       udata       0000  __Hudata_bank0 udata_bank0 0000
+__Lcode        code        0000  __Lconfig      config      0000
+__Ldata        data        0000  __Lspace_0     (abs)       0000
+__Lspace_1     (abs)       0000  __Lspace_4     (abs)       0000
+__Ludata       udata       0000  __Ludata_bank0 udata_bank0 0000
+__S0           (abs)       0200  __S1           (abs)       0000
